@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>7ecf049c-6a52-4090-aa5f-de888113d9bc</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>a0de5ee2-0f18-4b3d-92f0-a04ad56f3562</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{747fdbaa-807c-4bf1-bdf7-5228f208f64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DxStuff">
+      <UniqueIdentifier>{28bcdefd-a664-43e8-80ef-4c2bcbd568b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0a5eedf5-6e13-4d85-a04c-7b9a49b8613d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Headers">
+      <UniqueIdentifier>{9d4492ad-4c79-458f-81ba-888ba461e45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source">
+      <UniqueIdentifier>{b1f73abd-cc69-4b4c-9d9f-8811810d2e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DxStuff\Headers">
+      <UniqueIdentifier>{77b4d01f-5c53-49a1-b89d-d907682d6ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DxStuff\Source">
+      <UniqueIdentifier>{3bcff136-52c3-49d6-b568-e47c004d7899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Workflow">
+      <UniqueIdentifier>{4a46b4e2-38d1-4cb1-95e7-f2d7ac89719d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoader.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>DxStuff\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>DxStuff\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderLayoutDesc.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Skydome.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Cubemap.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\grass_albedo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\grass_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\wall_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\wall_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Abstract_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Abstract_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Metal_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Metal_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\stone_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\stone_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\wood_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\wood_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\organic_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\organic_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ice_albedo.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ice_normal.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="vertex_shader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="pixel_shader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="skymap_vertex.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="skymap_pixel.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cubemap_pixel_hlsl.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="cubemap_vertex.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Transform.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mvp.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthTarget.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DX.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUBuffer.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUConstBuffer.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderObject.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewProvider.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>DxStuff\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshLoader.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyDome.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderLayoutDesc.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bytecode.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Physix.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cubemap.h">
+      <Filter>Engine\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XboxFramework_TemporaryKey.pfx">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>Common</Filter>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\aj.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="Assets\cube.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="Assets\skysphere.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="Assets\sphere.txt">
+      <Filter>Assets</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

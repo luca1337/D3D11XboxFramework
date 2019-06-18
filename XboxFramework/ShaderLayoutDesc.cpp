@@ -1,0 +1,48 @@
+#include "ShaderLayoutDesc.h"
+
+#include <Core.h>
+
+D3D11_INPUT_ELEMENT_DESC ShaderLayoutDesc::Vertex[]
+{
+	{"VERTICES", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0}
+};
+
+unsigned ShaderLayoutDesc::v_layout_size = _countof(Vertex);
+
+D3D11_INPUT_ELEMENT_DESC ShaderLayoutDesc::VertexColor[]
+{
+	{"VERTICES", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"COLORS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 1, 0, D3D11_INPUT_PER_VERTEX_DATA, 0}
+};
+
+unsigned ShaderLayoutDesc::vc_layout_size = _countof(VertexColor);
+
+D3D11_INPUT_ELEMENT_DESC ShaderLayoutDesc::VertexNormalUv[]
+{
+	{"VERTICES", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"NORMALS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 1, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"UVS", 0, DXGI_FORMAT_R32G32_FLOAT, 2, 0, D3D11_INPUT_PER_VERTEX_DATA, 0}
+};
+
+unsigned ShaderLayoutDesc::vnu_layout_size = _countof(VertexNormalUv);
+
+D3D11_INPUT_ELEMENT_DESC ShaderLayoutDesc::VertexNormalUvTangent[]
+{
+	{"VERTICES", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"NORMALS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 1, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"UVS", 0, DXGI_FORMAT_R32G32_FLOAT, 2, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"TANGENTS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 3, 0, D3D11_INPUT_PER_VERTEX_DATA, 0}
+};
+
+unsigned ShaderLayoutDesc::vnut_layout_size = _countof(VertexNormalUvTangent);
+
+D3D11_INPUT_ELEMENT_DESC ShaderLayoutDesc::VertexNormalUvTangentBitangent[]
+{
+	{"VERTICES", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"NORMALS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 1, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"UVS", 0, DXGI_FORMAT_R32G32_FLOAT, 2, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"TANGENTS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 3, 0, D3D11_INPUT_PER_VERTEX_DATA, 0},
+	{"BITANGENTS", 0, DXGI_FORMAT_R32G32B32_FLOAT, 4, 0, D3D11_INPUT_PER_VERTEX_DATA, 0}
+};
+
+unsigned ShaderLayoutDesc::vnutb_layout_size = _countof(VertexNormalUvTangentBitangent);
